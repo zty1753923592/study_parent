@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="study_cache" />
+        <module name="study_user_service" />
+        <module name="study_user_api" />
+        <module name="study_auth" />
+        <module name="study_vue" />
+        <module name="study_commons" />
+        <module name="study_repo" />
+        <module name="study_user_domain" />
+        <module name="study_run" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="study_auth" options="" />
+      <module name="study_cache" options="" />
+      <module name="study_commons" options="" />
+      <module name="study_repo" options="" />
+      <module name="study_run" options="" />
+    </option>
+  </component>
+</project>

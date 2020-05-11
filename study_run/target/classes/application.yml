@@ -1,0 +1,39 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /study
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false&allowPublicKeyRetrieval=true
+  redis:
+    host: 121.199.24.182
+    port: 6379
+    password:
+    timeout: 10000
+    jedis:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 0
+
+
+mybatis-plus:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+  #配置逻辑删除规则   0代表删除   1正常
+  global-config:
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+  type-aliases-package: com.zty.study.repo.model
+
+  alibaba:
+    sendsms:
+      SignName: 码农
+      AccessKeyID: LTAI4FyWEhwZw5ag9KmikxPa
+      AccessKeySecret: RcEbAR0Kh3DMXA8F518PIc8ND4ysBB
+      TemplateCode: SMS_163625310

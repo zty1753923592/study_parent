@@ -1,0 +1,69 @@
+
+#全局配置
+global:
+  #生成文件位于项目里的相对路径
+  output-dic: /study_repo/src/main/java
+  #覆盖已有文件
+  file-override: true
+  #是否启用Swag]=\iuger注解
+  swagger: true
+  #作者
+  author: lsy
+
+#Mysql数据源配置
+datasource:
+  url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false&allowPublicKeyRetrieval=true
+  username: root
+  password: 123
+
+#包配置
+package:
+  #上级包位置
+  parent: com.zty.study.repo
+  #生成的Entity所处包
+  entity: model
+  #生成的Mapper所处包
+  mapper: mapper
+  #生成的Mapper.xml所处资源文件夹
+  xml: /mapper
+  #生成的Controller所处包
+  controller: controller
+  #生成的Service所处包
+  service: service
+  #生成的ServiceImpl所处包
+  service-impl: service.impl
+#模板配置
+template:
+  #生成的mapping文件夹位于项目里的路径
+  mapping-dic: /study_repo/src/main/resources
+  #采用velocity模板引擎
+  #xml模板路径（不用带上.ftl/.vm, 会根据使用的模板引擎自动识别）
+  xml-vm: /templates/mapper.xml
+  #entity模板路径
+  entity-vm: /templates/entity.java
+  #mapper模板路径
+  mapper-vm: /templates/mapper.java
+  #controller模板路径
+  controller-vm: /templates/controller.java
+  #service模板路径
+  service-vm: /templates/service.java
+  #serviceImpl模板路径
+  service-impl-vm: /templates/serviceImpl.java
+
+#策略配置
+strategy:
+  #表名转实体名规则，是否下划线转驼峰
+  naming: true
+  #表字段名转属性规则，是否下划线转驼峰
+  column-naming: true
+  #实体类中属性与表字段映射是否全部写明注释
+  entity-table-field-annotation-enable: true
+  #实体是否启用Lombok模型注解
+  entity-lombok-model: true
+  #实体是否启用Builder构建器模型注解
+  entity-builder-model: true
+
+
+
+
+
