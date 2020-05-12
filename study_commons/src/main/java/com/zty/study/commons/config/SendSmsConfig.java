@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 @Data
 public class SendSmsConfig {
 
-    private String AccessKeyID="LTAI4FyWEhwZw5ag9KmikxPa";
-    private String AccessKeySecret="RcEbAR0Kh3DMXA8F518PIc8ND4ysBB";
+    private String AccessKeyID="";
+    private String AccessKeySecret="";
     /*模板编号*/
-    private String TemplateCode="SMS_163625310";
+    private String TemplateCode="";
     /*模板签名*/
-    private String SignName="码农";
+    private String SignName="";
 }

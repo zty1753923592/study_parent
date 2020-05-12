@@ -28,6 +28,9 @@ public class R<T> {
     @JsonView(value = ModelAndView.class)
     private T data;
 
+    public static <T> R<T> ok() {
+        return resultApi(Constants.SUCCESS, LocalDateTime.now(), null, null);
+    }
 
     public static <T> R<T> ok(T data) {
         return resultApi(Constants.SUCCESS, LocalDateTime.now(), null, data);

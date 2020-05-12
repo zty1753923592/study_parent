@@ -20,8 +20,12 @@ public interface Constants {
 
         CODE_ERROR(5002,"验证码未过期"),
 
-        INVALID_PARAM_MSG(5003,"无效参数");
+        INVALID_PARAM_MSG(5003,"无效参数"),
 
+        LOG_ERROR(5004, "登录失败"),
+
+
+        ;
         //状态码
         int code;
 

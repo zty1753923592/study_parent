@@ -52,7 +52,7 @@ public class RedisUtils {
      * @param key
      */
     public void expire(String key) {
-        template.expire(key,60, TimeUnit.MINUTES);
+        template.expire(key,60, TimeUnit.SECONDS);
     }
 
     /**

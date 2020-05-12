@@ -31,9 +31,3 @@ mybatis-plus:
       logic-not-delete-value: 1
   type-aliases-package: com.zty.study.repo.model
 
-  alibaba:
-    sendsms:
-      SignName: 码农
-      AccessKeyID: LTAI4FyWEhwZw5ag9KmikxPa
-      AccessKeySecret: RcEbAR0Kh3DMXA8F518PIc8ND4ysBB
-      TemplateCode: SMS_163625310
